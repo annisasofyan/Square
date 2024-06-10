@@ -44,12 +44,12 @@ namespace SquareWpApp
                 if (loginResult != null && loginResult.Status == 200)
                 {
                     idToken = loginResult.IdToken;
-                    MessageBox.Show("Login berhasil!", "Sukses", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Login successful!", "succeed", MessageBoxButton.OK, MessageBoxImage.Information);
                     UpdateUIForLoggedInState();
                 }
                 else
                 {
-                    MessageBox.Show("Login gagal: " + loginResult?.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Login failed   : " + loginResult?.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     UpdateUIForLoggedOutState();
                 }
             }
@@ -143,6 +143,12 @@ namespace SquareWpApp
             StatusTextBlock.Text = "Please log in first to change the square's colour.";
             StatusTextBlock.Foreground = new SolidColorBrush(Colors.Gray);
             idToken = null;
+        }
+
+        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        {
+            RegisterWindow registerWindow = new RegisterWindow();
+            registerWindow.ShowDialog();
         }
     }
 }
