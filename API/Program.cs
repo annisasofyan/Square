@@ -57,6 +57,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+else
+{
+    app.Urls.Add("http://*:4001"); // Ensure the application listens on the correct port
+    // Ensure Swagger is available in production
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Square API V1");
+        c.RoutePrefix = string.Empty; // Serve Swagger UI at the app's root
+    });
+}
 
 app.UseHttpsRedirection();
 
