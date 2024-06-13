@@ -3,6 +3,7 @@ using API.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(Db_context))]
-    partial class Db_contextModelSnapshot : ModelSnapshot
+    [Migration("20240613030737_Weathers")]
+    partial class Weathers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -35,7 +37,7 @@ namespace API.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Cities");
+                    b.ToTable("cities");
                 });
 
             modelBuilder.Entity("API.Models.Square", b =>
@@ -133,7 +135,7 @@ namespace API.Migrations
 
                     b.HasIndex("weatherId");
 
-                    b.ToTable("WetherDetails");
+                    b.ToTable("wetherDetails");
                 });
 
             modelBuilder.Entity("API.Models.WetherDetails", b =>

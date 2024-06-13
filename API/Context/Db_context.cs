@@ -13,11 +13,22 @@ namespace API.Context
         public Db_context(DbContextOptions<Db_context> options) : base(options)
         {
         }
-        public DbSet<User> Users { get; set; }
-        public DbSet<Square> Squares{ get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseLazyLoadingProxies();
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //tulis modelBuilder dsini guys
+            //Mondems
+            //  modelBuilder.Entity<MondemCalculate>().HasOne(ForeignEntity => ForeignEntity.Attend).WithMany(k => k.Mondems);Serrver 
+            modelBuilder.Entity<WetherDetails>().HasOne(ForeignEntity => ForeignEntity.Weather).WithMany(k => k.WeatherDetails);
+            modelBuilder.Entity<WetherDetails>().HasOne(ForeignEntity => ForeignEntity.City).WithMany(k => k.WeatherDetails);
+            //Employee
         }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Square> Squares{ get; set; }
+        public DbSet<Weather> Weathers { get; set; }
+        public DbSet<WetherDetails> WetherDetails { get; set; }
+        public DbSet<City> Cities { get; set; }
     }
 }
