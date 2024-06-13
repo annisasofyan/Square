@@ -8,13 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\Icons\icons8minimize48.png" />
-    <None Remove="Styles\assets\icons\icons8minimize48.png" />
+    <None Remove="Assets\Icons\Ibc_icons8minimize.png" />
+    <None Remove="Assets\Icons\Ib_icons8minimize.png" />
+    <None Remove="Assets\Icons\Ib_icons8minimize48.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\Icons\icons8minimize48.png" />
-    <Resource Include="Styles\assets\icons\icons8minimize48.png" />
+    <Resource Include="Assets\Icons\Ibc_icons8minimize.png" />
+    <Resource Include="Assets\Icons\Ib_icons8minimize.png" />
+    <Resource Include="Assets\Icons\Ib_icons8minimize48.png" />
   </ItemGroup>
 
 </Project>

@@ -2,8 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <!--Region Button Minimize-->
-    <ImageBrush x:Key="ib_MinimizeAct" ImageSource="../Assets/Icons/icons8minimize48.png"/>
-    <ImageBrush x:Key="ib_MinimizePass" ImageSource="../Assets/Icons/icons8minimize48.png"/>
+    <ImageBrush x:Key="ib_MinimizeAct" ImageSource="../Assets/Icons/Ibc_icons8minimize.png"/>
+    <ImageBrush x:Key="ib_MinimizePass" ImageSource="../Assets/Icons/Ib_icons8minimize.png"/>
 
 
     <Style x:Key="bt_MinimizeWindow" TargetType="{x:Type Button}">
@@ -21,15 +21,16 @@
                             Background="{StaticResource ib_MinimizePass}"/>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource ib_MinimizeAct}"
+                            <Setter Property="Background" TargetName="Border" Value="{StaticResource ib_MinimizeAct}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="Border" Value="{StaticResource ib_MinimizePass}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
-                    
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-        
-        
+            
     </Style>
     <!--End Region Button Minimize-->
 </ResourceDictionary>

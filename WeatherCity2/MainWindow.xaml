@@ -5,13 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeatherCity2"
         mc:Ignorable="d"
+
         Title="MainWindow" 
         Height="600" 
         Width="800"
         WindowStyle="None"
         AllowsTransparency="True"
         Background="Transparent"
-        
+        WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown"
         
         >
     <Grid>
@@ -19,7 +21,6 @@
             Background="{StaticResource cs_Background}"
             CornerRadius="20"
             BorderThickness="3"
-            
             BorderBrush="{StaticResource cs_BorderBrush }"
                 />
         <Grid>
@@ -40,6 +41,7 @@
                 Grid.Row="0"
                 Orientation="Horizontal"
                 HorizontalAlignment="Right"
+                VerticalAlignment="Top"
                 >
                 <Button
                     x:Name="BtnMinimize"
