@@ -24,7 +24,7 @@ namespace WeatherCity2
         {
             InitializeComponent();
             this.WindowState = WindowState.Maximized;
-            BtnRestoreDown.Style = (Style)FindResource("bt_RestoreDownWindow");
+            BtnRestoreDown.Style = (Style)FindResource("bt_RestoreDownWindow"); 
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {

@@ -14,6 +14,7 @@
     <!--Region Solid Color-->
     <SolidColorBrush x:Key="cs_BackgroundLayer" Opacity="0.7" Color="#E4E3E3"/>
     <SolidColorBrush x:Key="cs_BorderBrush" Color="#FF97CEDA"/>
+    <SolidColorBrush x:Key="cs_Clouds" Color="#000000"/>
     
     <!--End Region Solid Color-->
 </ResourceDictionary>

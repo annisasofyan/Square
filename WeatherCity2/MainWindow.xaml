@@ -65,6 +65,20 @@
             CornerRadius="20"
             Margin="0 30 0 30"
             />
+            <StackPanel Grid.Row="3" Grid.Column="1"
+                        Margin=" 40 40 40 40"
+                        >
+                <Label FontFamily="Roboto"
+                       FontSize="15"
+                       Padding="0"
+                       Margin="1.5 10 0 5"
+                       HorizontalAlignment="Center"
+                       Content="Lorem ipsum is damet"
+                       Foreground="{StaticResource cs_Clouds}"
+                       />
+                <TextBox Style="{StaticResource tbox_PeoplePlaceHolder }"></TextBox>
+            </StackPanel>
+            
 
         </Grid>
 

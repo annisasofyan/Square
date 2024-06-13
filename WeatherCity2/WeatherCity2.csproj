@@ -8,6 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Font\Roboto-Black.ttf" />
+    <None Remove="Assets\Font\Roboto-BlackItalic.ttf" />
+    <None Remove="Assets\Font\Roboto-Bold.ttf" />
+    <None Remove="Assets\Font\Roboto-BoldItalic.ttf" />
+    <None Remove="Assets\Font\Roboto-Italic.ttf" />
+    <None Remove="Assets\Font\Roboto-Light.ttf" />
+    <None Remove="Assets\Font\Roboto-LightItalic.ttf" />
+    <None Remove="Assets\Font\Roboto-Medium.ttf" />
+    <None Remove="Assets\Font\Roboto-MediumItalic.ttf" />
+    <None Remove="Assets\Font\Roboto-Regular.ttf" />
+    <None Remove="Assets\Font\Roboto-Thin.ttf" />
+    <None Remove="Assets\Font\Roboto-ThinItalic.ttf" />
     <None Remove="Assets\Icons\Windowdock\icons8_close_.png" />
     <None Remove="Assets\Icons\Windowdock\icons8_close_bold.png" />
     <None Remove="Assets\Icons\Windowdock\icons8_horizontal_line.png" />
@@ -19,6 +31,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Font\Roboto-Black.ttf" />
+    <Resource Include="Assets\Font\Roboto-BlackItalic.ttf" />
+    <Resource Include="Assets\Font\Roboto-Bold.ttf" />
+    <Resource Include="Assets\Font\Roboto-BoldItalic.ttf" />
+    <Resource Include="Assets\Font\Roboto-Italic.ttf" />
+    <Resource Include="Assets\Font\Roboto-Light.ttf" />
+    <Resource Include="Assets\Font\Roboto-LightItalic.ttf" />
+    <Resource Include="Assets\Font\Roboto-Medium.ttf" />
+    <Resource Include="Assets\Font\Roboto-MediumItalic.ttf" />
+    <Resource Include="Assets\Font\Roboto-Regular.ttf" />
+    <Resource Include="Assets\Font\Roboto-Thin.ttf" />
+    <Resource Include="Assets\Font\Roboto-ThinItalic.ttf" />
     <Resource Include="Assets\Icons\Windowdock\icons8_close_.png" />
     <Resource Include="Assets\Icons\Windowdock\icons8_close_bold.png" />
     <Resource Include="Assets\Icons\Windowdock\icons8_horizontal_line.png" />
