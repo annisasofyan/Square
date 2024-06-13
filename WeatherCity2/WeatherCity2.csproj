@@ -20,6 +20,7 @@
     <None Remove="Assets\Font\Roboto-Regular.ttf" />
     <None Remove="Assets\Font\Roboto-Thin.ttf" />
     <None Remove="Assets\Font\Roboto-ThinItalic.ttf" />
+    <None Remove="Assets\Icons\ui\icons8_user_16.png" />
     <None Remove="Assets\Icons\Windowdock\icons8_close_.png" />
     <None Remove="Assets\Icons\Windowdock\icons8_close_bold.png" />
     <None Remove="Assets\Icons\Windowdock\icons8_horizontal_line.png" />
@@ -43,6 +44,7 @@
     <Resource Include="Assets\Font\Roboto-Regular.ttf" />
     <Resource Include="Assets\Font\Roboto-Thin.ttf" />
     <Resource Include="Assets\Font\Roboto-ThinItalic.ttf" />
+    <Resource Include="Assets\Icons\ui\icons8_user_16.png" />
     <Resource Include="Assets\Icons\Windowdock\icons8_close_.png" />
     <Resource Include="Assets\Icons\Windowdock\icons8_close_bold.png" />
     <Resource Include="Assets\Icons\Windowdock\icons8_horizontal_line.png" />
