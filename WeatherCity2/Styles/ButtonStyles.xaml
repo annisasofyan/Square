@@ -2,10 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <!--Region Button Minimize-->
-    <ImageBrush x:Key="ib_MinimizeAct" ImageSource="../Assets/Icons/Ibc_icons8minimize.png"/>
-    <ImageBrush x:Key="ib_MinimizePass" ImageSource="../Assets/Icons/Ib_icons8minimize.png"/>
-
-
+    <ImageBrush x:Key="ib_Minimize" ImageSource="../Assets/Icons/windowdock/icons8_horizontal_line.png"/>
     <Style x:Key="bt_MinimizeWindow" TargetType="{x:Type Button}">
         <Setter Property="Height" Value="25"/>
         <Setter Property="Width" Value="25"/>
@@ -18,13 +15,15 @@
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border x:Name="Border" 
                             BorderThickness="0"
-                            Background="{StaticResource ib_MinimizePass}"/>
+                            Background="{StaticResource ib_Minimize}"/>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" TargetName="Border" Value="{StaticResource ib_MinimizeAct}"/>
+                            <!--<Setter Property="Background" TargetName="Border" Value="{StaticResource ib_Minimize}"/>-->
+                            <Setter Property="Opacity" Value="0.5"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Background" TargetName="Border" Value="{StaticResource ib_MinimizePass}"/>
+                            <Setter Property="Opacity" Value="0.2"/>
+                            <!--<Setter Property="Background" TargetName="Border" Value="{StaticResource ib_Minimize}"/>-->
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -33,4 +32,98 @@
             
     </Style>
     <!--End Region Button Minimize-->
+    <!--Region Button Restore Down-->
+    <ImageBrush x:Key="ib_RestoreDown" ImageSource="../Assets/Icons/windowdock/icons8_restore_down_white.png"/>
+    <Style x:Key="bt_RestoreDownWindow" TargetType="{x:Type Button}">
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="Width" Value="25"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="Border" 
+                            BorderThickness="0"
+                            Background="{StaticResource ib_RestoreDown}"/>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <!--<Setter Property="Background" TargetName="Border" Value="{StaticResource ib_Minimize}"/>-->
+                            <Setter Property="Opacity" Value="0.5"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Opacity" Value="0.2"/>
+                            <!--<Setter Property="Background" TargetName="Border" Value="{StaticResource ib_Minimize}"/>-->
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+    <!--End Region Button Restore Down-->
+    <!--Region Button Close-->
+    <ImageBrush x:Key="ib_Close" ImageSource="../Assets/Icons/windowdock/icons8_close_.png"/>
+    <ImageBrush x:Key="ib_Close_b" ImageSource="../Assets/Icons/windowdock/icons8_close_bold.png"/>
+    <Style x:Key="bt_CloseWindow" TargetType="{x:Type Button}">
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="Width" Value="25"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="Border" 
+                            BorderThickness="0"
+                            Background="{StaticResource ib_Close}"/>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="Border" Value="{StaticResource ib_Close_b}"/>
+                            <Setter Property="Opacity" Value="0.5"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Opacity" Value="0.2"/>
+                            <Setter Property="Background" TargetName="Border" Value="{StaticResource ib_Close_b}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+    <!--End Region Button Close-->
+    <!--Region Button Maximize-->
+    <ImageBrush x:Key="ib_Maximize" ImageSource="../Assets/Icons/windowdock/icons8_toggle_full_screen.png"/>
+    <Style x:Key="bt_MaximizeWindow" TargetType="{x:Type Button}">
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="Width" Value="25"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="Border" 
+                            BorderThickness="0"
+                            Background="{StaticResource ib_Maximize}"/>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <!--<Setter Property="Background" TargetName="Border" Value="{StaticResource ib_Minimize}"/>-->
+                            <Setter Property="Opacity" Value="0.5"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Opacity" Value="0.2"/>
+                            <!--<Setter Property="Background" TargetName="Border" Value="{StaticResource ib_Minimize}"/>-->
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+    <!--End Region Button Maximize-->
 </ResourceDictionary>

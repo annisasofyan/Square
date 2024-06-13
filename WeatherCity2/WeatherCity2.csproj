@@ -8,15 +8,25 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\Icons\Ibc_icons8minimize.png" />
-    <None Remove="Assets\Icons\Ib_icons8minimize.png" />
-    <None Remove="Assets\Icons\Ib_icons8minimize48.png" />
+    <None Remove="Assets\Icons\Windowdock\icons8_close_.png" />
+    <None Remove="Assets\Icons\Windowdock\icons8_close_bold.png" />
+    <None Remove="Assets\Icons\Windowdock\icons8_horizontal_line.png" />
+    <None Remove="Assets\Icons\Windowdock\icons8_macos_minimize_48_black.png" />
+    <None Remove="Assets\Icons\Windowdock\icons8_macos_minimize_48_white.png" />
+    <None Remove="Assets\Icons\Windowdock\icons8_restore_down_black.png" />
+    <None Remove="Assets\Icons\Windowdock\icons8_restore_down_white.png" />
+    <None Remove="Assets\Icons\Windowdock\icons8_toggle_full_screen.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\Icons\Ibc_icons8minimize.png" />
-    <Resource Include="Assets\Icons\Ib_icons8minimize.png" />
-    <Resource Include="Assets\Icons\Ib_icons8minimize48.png" />
+    <Resource Include="Assets\Icons\Windowdock\icons8_close_.png" />
+    <Resource Include="Assets\Icons\Windowdock\icons8_close_bold.png" />
+    <Resource Include="Assets\Icons\Windowdock\icons8_horizontal_line.png" />
+    <Resource Include="Assets\Icons\Windowdock\icons8_macos_minimize_48_black.png" />
+    <Resource Include="Assets\Icons\Windowdock\icons8_macos_minimize_48_white.png" />
+    <Resource Include="Assets\Icons\Windowdock\icons8_restore_down_black.png" />
+    <Resource Include="Assets\Icons\Windowdock\icons8_restore_down_white.png" />
+    <Resource Include="Assets\Icons\Windowdock\icons8_toggle_full_screen.png" />
   </ItemGroup>
 
 </Project>

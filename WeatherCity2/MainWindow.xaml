@@ -46,7 +46,17 @@
                 <Button
                     x:Name="BtnMinimize"
                     Margin="0 5 5 0"
-                    Style="{StaticResource bt_MinimizeWindow}"
+                    Style="{StaticResource bt_MinimizeWindow}" Click="BtnMinimize_Click"
+                    ></Button>
+                <Button
+                    x:Name="BtnRestoreDown"
+                    Margin="0 5 5 0"
+                    Style="{StaticResource bt_RestoreDownWindow}" Click="BtnRestoreDown_Click"
+                    ></Button>
+                <Button
+                    x:Name="BtnClos"
+                    Margin="0 5 5 0"
+                    Style="{StaticResource bt_CloseWindow}" Click="BtnClos_Click"
                     ></Button>
             </StackPanel>
             <Border

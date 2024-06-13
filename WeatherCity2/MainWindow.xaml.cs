@@ -23,6 +23,8 @@ namespace WeatherCity2
         public MainWindow()
         {
             InitializeComponent();
+            this.WindowState = WindowState.Maximized;
+            BtnRestoreDown.Style = (Style)FindResource("bt_RestoreDownWindow");
         }
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -30,6 +32,32 @@ namespace WeatherCity2
             {
                 this.DragMove();
             }
+        }
+
+        private void BtnMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void BtnRestoreDown_Click(object sender, RoutedEventArgs e)
+        {
+            if(this.WindowState == WindowState.Normal)
+            {
+                this.WindowState=WindowState.Maximized;
+                BtnRestoreDown.Style = (Style)FindResource("bt_RestoreDownWindow");
+            }
+            else
+            {
+                this.WindowState = WindowState.Normal;
+                BtnRestoreDown.Style = (Style)FindResource("bt_MaximizeWindow");
+
+
+            }
+        }
+
+        private void BtnClos_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
