@@ -3,8 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-        xmlns:local="clr-namespace:WeatherCity"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="450" Width="800">
@@ -15,16 +13,17 @@
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal" Margin="10">
-            <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="16,0,0,16">
-                <ComboBox x:Name="CityComboBox" Width="200" Margin="0"
-                          VerticalContentAlignment="Center">
-                    <ComboBoxItem Content="New York"/>
-                    <ComboBoxItem Content="London"/>
-                    <ComboBoxItem Content="Tokyo"/>
-                    <ComboBoxItem Content="Sydney"/>
-                </ComboBox>
+            <Border CornerRadius="16,0,0,16" BorderThickness="1" BorderBrush="#99000000">
+                <Grid>
+                    <ComboBox x:Name="CityComboBox" Width="200" Margin="-1,0,0,0" VerticalContentAlignment="Center">
+                        <ComboBoxItem Content="New York"/>
+                        <ComboBoxItem Content="London"/>
+                        <ComboBoxItem Content="Tokyo"/>
+                        <ComboBoxItem Content="Sydney"/>
+                    </ComboBox>
+                </Grid>
             </Border>
-            <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="0,16,16,0">
+            <Border CornerRadius="0,16,16,0" BorderThickness="1" BorderBrush="#99000000">
                 <Button Content="Fetch Weather" Width="100" Click="FetchWeatherButton_Click"/>
             </Border>
         </StackPanel>

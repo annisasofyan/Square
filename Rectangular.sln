@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquareWpApp", "SquareWpApp\SquareWpApp.csproj", "{C600736E-141D-422B-B186-E099C2246281}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherCity", "WeatherCity\WeatherCity.csproj", "{5872E0F6-BC33-4398-912F-82D0E0631757}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherCity2", "WeatherCity2\WeatherCity2.csproj", "{648B31A3-A199-4660-8AE0-EBEF6EE61192}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{C600736E-141D-422B-B186-E099C2246281}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C600736E-141D-422B-B186-E099C2246281}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C600736E-141D-422B-B186-E099C2246281}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5872E0F6-BC33-4398-912F-82D0E0631757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5872E0F6-BC33-4398-912F-82D0E0631757}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5872E0F6-BC33-4398-912F-82D0E0631757}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5872E0F6-BC33-4398-912F-82D0E0631757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{648B31A3-A199-4660-8AE0-EBEF6EE61192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{648B31A3-A199-4660-8AE0-EBEF6EE61192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{648B31A3-A199-4660-8AE0-EBEF6EE61192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{648B31A3-A199-4660-8AE0-EBEF6EE61192}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
