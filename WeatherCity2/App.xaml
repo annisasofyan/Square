@@ -10,6 +10,7 @@
                 <ResourceDictionary Source="Styles/ButtonStyles.xaml"/>
                 <ResourceDictionary Source="Styles/TexBoxStyles.xaml"/>
                 <ResourceDictionary Source="Styles/ComboBoxStyles.xaml"/>
+                <ResourceDictionary Source="Styles/ImageStyles.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

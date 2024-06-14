@@ -11,6 +11,7 @@ namespace API.Models
         [ForeignKey("City")]
         public int cityId { get; set; }
         public virtual Weather Weather { get; set; }
+        [JsonIgnore]
         public virtual City City { get; set; }  
     }
 }

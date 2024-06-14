@@ -29,6 +29,7 @@
     <None Remove="Assets\Icons\Windowdock\icons8_restore_down_black.png" />
     <None Remove="Assets\Icons\Windowdock\icons8_restore_down_white.png" />
     <None Remove="Assets\Icons\Windowdock\icons8_toggle_full_screen.png" />
+    <None Remove="Assets\typcn_weather-partly-sunny.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -53,6 +54,7 @@
     <Resource Include="Assets\Icons\Windowdock\icons8_restore_down_black.png" />
     <Resource Include="Assets\Icons\Windowdock\icons8_restore_down_white.png" />
     <Resource Include="Assets\Icons\Windowdock\icons8_toggle_full_screen.png" />
+    <Resource Include="Assets\typcn_weather-partly-sunny.png" />
   </ItemGroup>
 
 </Project>

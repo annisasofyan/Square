@@ -35,7 +35,13 @@
                 <RowDefinition Height="70"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-
+            <StackPanel
+                VerticalAlignment="Center"
+                Grid.Row="0" Grid.Column="1"
+                >
+                <ComboBox 
+                    ItemContainerStyle="{DynamicResource ComboBoxItemContainerStyle1}"></ComboBox>
+            </StackPanel>
             <StackPanel 
                 Grid.Column="2"
                 Grid.Row="0"
@@ -59,6 +65,21 @@
                     Style="{StaticResource bt_CloseWindow}" Click="BtnClos_Click"
                     ></Button>
             </StackPanel>
+            <StackPanel x:Name="CloudInfoLayout" 
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Grid.Row="1" Grid.Column="1">
+                <Label FontFamily="Roboto"
+                       FontSize="25"
+                       Padding="0"
+                       Margin="1.5 10 0 5"
+                       HorizontalAlignment="Center"
+                       Content="12:54"
+                       Foreground="{StaticResource cs_Clouds}"
+                       />
+                <Image Style="{StaticResource img_CloudWeather}" 
+                       Source="Assets/typcn_weather-partly-sunny.png"></Image>
+            </StackPanel>
             <Border
                 Grid.Row="3" Grid.Column="1"
             Background="{StaticResource cs_BackgroundLayer}"
@@ -76,8 +97,6 @@
                        Content="Lorem ipsum is damet"
                        Foreground="{StaticResource cs_Clouds}"
                        />
-                <TextBox Tag="Username" Style="{StaticResource tbox_PeoplePlaceHolder }"></TextBox>
-                <ComboBox ItemContainerStyle="{DynamicResource ComboBoxItemContainerStyle1}"></ComboBox>
             </StackPanel>
             
 
