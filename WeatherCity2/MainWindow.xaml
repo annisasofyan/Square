@@ -23,35 +23,39 @@
             BorderThickness="3"
             BorderBrush="{StaticResource cs_BorderBrush}"/>
         <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="500"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="70"/>
-                    <RowDefinition Height="70"/>
-                    <RowDefinition Height="70"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <StackPanel VerticalAlignment="Center" Grid.Row="0" Grid.Column="1">
-                    <ComboBox x:Name="CityComboBox" 
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Column="2" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <Button x:Name="BtnMinimize" Margin="0 5 5 0" Style="{StaticResource bt_MinimizeWindow}" Click="BtnMinimize_Click"/>
+                <Button x:Name="BtnRestoreDown" Margin="0 5 5 0" Style="{StaticResource bt_RestoreDownWindow}" Click="BtnRestoreDown_Click"/>
+                <Button x:Name="BtnClos" Margin="0 5 5 0" Style="{StaticResource bt_CloseWindow}" Click="BtnClos_Click"/>
+            </StackPanel>
+
+            <StackPanel x:Name="PanelView" Grid.Column="1" Grid.RowSpan="4" Margin="20">
+                <ComboBox x:Name="CityComboBox" 
                           DisplayMemberPath="Name"
-                          SelectionChanged="CityComboBox_SelectionChanged"/>
+                          SelectionChanged="CityComboBox_SelectionChanged"
+                          VerticalAlignment="Top"
+                          Margin="0 0 0 20"/>
+                <StackPanel x:Name="CloudInfoLayout" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 0 20">
+                    <Label x:Name="WeatherTimeLabel" FontFamily="Roboto" FontSize="25" Padding="0" Margin="0 0 0 10" HorizontalAlignment="Center" Foreground="{StaticResource cs_Clouds}"/>
+                    <Image x:Name="WeatherImage" Width="200" Height="200" Style="{StaticResource img_CloudWeather}" Source="Assets/typcn_weather-partly-sunny.png"/>
                 </StackPanel>
-                <StackPanel Grid.Column="2" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
-                    <Button x:Name="BtnMinimize" Margin="0 5 5 0" Style="{StaticResource bt_MinimizeWindow}" Click="BtnMinimize_Click"/>
-                    <Button x:Name="BtnRestoreDown" Margin="0 5 5 0" Style="{StaticResource bt_RestoreDownWindow}" Click="BtnRestoreDown_Click"/>
-                    <Button x:Name="BtnClos" Margin="0 5 5 0" Style="{StaticResource bt_CloseWindow}" Click="BtnClos_Click"/>
+                <Border Background="{StaticResource cs_BackgroundLayer}" CornerRadius="20" Margin="0 0 0 20"/>
+                <StackPanel>
+                    <Label x:Name="WeatherDetailLabel" FontFamily="Roboto" FontSize="15" Padding="0" Margin="0 0 0 10" HorizontalAlignment="Center" Foreground="{StaticResource cs_Clouds}"/>
                 </StackPanel>
-                <StackPanel x:Name="CloudInfoLayout" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1">
-                    <Label x:Name="WeatherTimeLabel" FontFamily="Roboto" FontSize="25" Padding="0" Margin="1.5 10 0 5" HorizontalAlignment="Center" Content="12:54" Foreground="{StaticResource cs_Clouds}"/>
-                    <Image x:Name="WeatherImage" Style="{StaticResource img_CloudWeather}" Source="Assets/typcn_weather-partly-sunny.png"/>
-                </StackPanel>
-                <Border Grid.Row="3" Grid.Column="1" Background="{StaticResource cs_BackgroundLayer}" CornerRadius="20" Margin="0 30 0 30"/>
-                <StackPanel Grid.Row="3" Grid.Column="1" Margin="40 40 40 40">
-                    <Label x:Name="WeatherDetailLabel" FontFamily="Roboto" FontSize="15" Padding="0" Margin="1.5 10 0 5" HorizontalAlignment="Center" Content="Lorem ipsum is damet" Foreground="{StaticResource cs_Clouds}"/>
-                </StackPanel>
-            </Grid>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
