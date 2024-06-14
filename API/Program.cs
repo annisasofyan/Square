@@ -9,13 +9,20 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
+{
+    options.SuppressModelStateInvalidFilter = true;
+});
 var services = builder.Services;
 services.AddDbContext<Db_context>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("APISqlServer"));
 });
 services.AddScoped<UsersRepository>();
 services.AddScoped<SquareRepository>();
+services.AddScoped<WeatherRepository>();
+services.AddScoped<WetherDetailsRepository>();
+services.AddScoped<CityRepository>();
+
 
 services.AddAuthentication(auth =>
 {

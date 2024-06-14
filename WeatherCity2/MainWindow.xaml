@@ -76,7 +76,8 @@
                        Content="Lorem ipsum is damet"
                        Foreground="{StaticResource cs_Clouds}"
                        />
-                <TextBox Style="{StaticResource tbox_PeoplePlaceHolder }"></TextBox>
+                <TextBox Tag="Username" Style="{StaticResource tbox_PeoplePlaceHolder }"></TextBox>
+                <ComboBox ItemContainerStyle="{DynamicResource ComboBoxItemContainerStyle1}"></ComboBox>
             </StackPanel>
             
 

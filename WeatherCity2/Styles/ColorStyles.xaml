@@ -15,7 +15,7 @@
     <SolidColorBrush x:Key="cs_BackgroundLayer" Opacity="0.7" Color="#E4E3E3"/>
     <SolidColorBrush x:Key="cs_BorderBrush" Color="#FF97CEDA"/>
     <SolidColorBrush x:Key="cs_Clouds" Color="#000000"/>
-    <SolidColorBrush x:Key="cs_Watermark" Color="#FFC2BBBA"/>
+    <SolidColorBrush x:Key="cs_Watermark" Color="#2C2C2C"/>
     <SolidColorBrush x:Key="cs_PinkSoft" Color="#F58F84"/>
     
     <!--End Region Solid Color-->

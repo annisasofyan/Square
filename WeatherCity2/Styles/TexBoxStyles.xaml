@@ -9,7 +9,7 @@
         <Setter Property="Height" Value="35"/>
         <Setter Property="Width" Value="250"/>
         <Setter Property="Background" Value="{StaticResource cs_BorderBrush}"/>
-        <Setter Property="Foreground" Value="Beige"/>
+        <Setter Property="Foreground" Value="Black"/>
         <Setter Property="Padding" Value="0 5 5 4"/>
         <Setter Property="Margin" Value="0 10 0 0"/>
         <Setter Property="Grid.Column" Value="1"/>
@@ -73,7 +73,7 @@
                         </MultiTrigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
-
+    
             </Setter.Value>
         </Setter>
     </Style>
